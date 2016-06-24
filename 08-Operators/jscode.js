@@ -23,7 +23,7 @@ var number2 = 4;
 
 number1 += number2;
 number1++;
-//The multiplication and division oerators take precedence over
+//The multiplication and division operators take precedence over
 //Subtraction and addition operators
 var number3 = 4 + 3 * 5; 
 document.write(number1 + " ");
