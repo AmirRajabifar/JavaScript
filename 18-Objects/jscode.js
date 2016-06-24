@@ -31,12 +31,24 @@ var orc = {
 
 var newAge = orc.age + 2;
 orc.stomachFull = false;
+
+//we can change the data type of an object property
+orc.hair = 1;
+// we can also add a new property as long as the property does not exist
+orc.hair2 = " red";
 document.write(newAge);
+
 if (orc.stomachFull == true)
 {
 	orc.eat();	
 }
 else 
 {
-	document.write(" Not eating!");
+	document.write(" Not eating! ");
 }
+
+document.write(orc.hair);
+document.write(orc.hair2);
+//we can delete an object property by using the delete key word
+delete orc.hair2;
+document.write(orc.hair2); // the property does not exist >> undefined
